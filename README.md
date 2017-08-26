@@ -10,18 +10,24 @@ These were used during conceptualization of the project. Although not used on th
 ## 4 Arduino Ino files:
 These run on the 4 arduinos that make up Lidar Cruise
 
-### Ino to Website guide
+LidarACC:
 
-LidarACC is Arduino 3
+Central brain, also called Arduino 3
 
-VSS_ACC is Arduino 2
+VSS_ACC: 
 
-MirrorACC is Arduino 1
+Reads VSS wire, passes info to central brain upon request, also called Arduino 2
 
-ControlACC is Arduino 4
+MirrorACC:
+
+Controls motor that Lidar is attached to. Sends trigger to central brain when photogate is hit, starting main code. Essentially a clock for the entire system. Also called Arduino 1
+
+ControlACC:
+
+Controls relays attached to resistors. Reads from steering wheel and central brain, decides what command to send to car cruise control module. Based on SteeringWheelControl code. Also called Arduino 4.
 
 ## 1 Fritzing file: 
 This file allowed planning of wiring for Lidar Cruise
 
 ## 1 Blender file: 
-This object was 3D printed, allowing waterproof connection of the Lidar tube and window.
+This object was 3D printed, allowing waterproof connection of the Lidar tube and flat window. Needed since the Lidar was not looking through a curved window directly attached to the tube. 
