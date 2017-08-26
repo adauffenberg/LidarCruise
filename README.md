@@ -2,6 +2,8 @@
 
 Lidar Cruise is a level 1 autonomous active cruise control system for my 2005 Mazda6. By interfacing with my steering wheel cruise control buttons and a Lidar unit, the distance to the object ahead can be varied.
 
+Pleae read this projects website first for a overview of the system. This will aid in understanding of the files here.
+
 Included in this Repo:
 
 ## 2 Matlab files: 
