@@ -7,26 +7,26 @@ Pleae read this projects website first for a overview of the system. This will a
 Included in this Repo:
 
 ## 2 Matlab files: 
-These were used during conceptualization of the project. Although not used on the final hardware for various reasons, they provided valuable knowledge at the start. Scenecreation.m builds one of three environments based off my hand drawings of satellite images. Basically creates a 2d model for the next file to interact with. ACC_code_tests.m identifies objects based on size, angle, and position. Very matrix heavy, probably too much to run on an Arduino. Hence, simplified code for final arduino hardware.
+These were used during conceptualization of the project. Although not used on the final hardware for various reasons, they provided valuable knowledge at the start. Scenecreation.m builds one of three environments based off my hand drawings of satellite images. Basically creates a 2d model for the next file to interact with. ACC_code_tests.m identifies objects based on size, angle, and position. Very matrix heavy, probably too much to run on an Arduino. Hence, a much simplified code is run on final arduino hardware.
 
 ## 4 Arduino Ino files:
 These run on the 4 arduinos that make up Lidar Cruise
 
 LidarACC:
 
-Central brain, also called Arduino 3
+Central brain. Gathers Lidar data and data from other arduinos. Also called Arduino 3
 
 VSS_ACC: 
 
-Reads VSS wire, passes info to central brain upon request, also called Arduino 2
+Reads VSS wire, passes vehicle speed to central brain upon request, also called Arduino 2
 
 MirrorACC:
 
-Controls motor that Lidar is attached to. Sends trigger to central brain when photogate is hit, starting main code. Essentially a clock for the entire system. Also called Arduino 1
+Controls motor that Lidar is mounted on, as well as reading photogates. Sends trigger to central brain when photogate is triggered from motor rotation, starting main loop in central brain. Essentially a clock for the entire system. Also called Arduino 1.
 
 ControlACC:
 
-Controls relays attached to resistors. Reads from steering wheel and central brain, decides what command to send to car cruise control module. Based on SteeringWheelControl code. Also called Arduino 4.
+Reads from steering wheel buttons and central brain, decides what relay/resistor to switch. This controls the car cruise control module set speed. Based on SteeringWheelControl code. Also called Arduino 4.
 
 ## 1 Fritzing file: 
 This file allowed planning of wiring for Lidar Cruise
