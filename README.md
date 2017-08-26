@@ -4,7 +4,12 @@ LidarCruise is a level 1 autonomous active cruise control system for my 2005 Maz
 
 This repo includes the code for the 4 Arduinos and a simple wiring diagram.
 
-LidarACC is Arduino 3 on my website
+##Ino to Website guide
+
+LidarACC is Arduino 3
+
 VSS_ACC is Arduino 2
+
 MirrorACC is Arduino 1
+
 ControlACC is Arduino 4
