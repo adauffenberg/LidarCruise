@@ -6,8 +6,8 @@ Pleae read this projects website first for a overview of the system. This will a
 
 Included in this Repo:
 
-## 2 Matlab files: 
-These were used during conceptualization of the project. Although not used on the final hardware for various reasons, they provided valuable knowledge at the start. Scenecreation.m builds one of three environments based off my hand drawings of satellite images. Basically creates a 2d model for the next file to interact with. ACC_code_tests.m identifies objects based on size, angle, and position. Very matrix heavy, probably too much to run on an Arduino. Hence, a much simplified code is run on final arduino hardware.
+## 2 Matlab files and jpg image: 
+These were used during conceptualization of the project. Although not used on the final hardware for various reasons, they provided valuable knowledge at the start. Scene_creation.m builds one of three environments based off my hand drawing of green lines on satellite images. Basically creates a 2d model for the next matlab file to interact with. ACC_code_tests.m runs a "virtual lidar" by firing blue beams, collisions are red points. Objects from scene_creation.m are identified based on size, angle, and position of the red points and are marked in white. This code is very matrix heavy, probably too much to run on an Arduino. Hence, a much simplified code is run on final arduino hardware.
 
 ## 4 Arduino Ino files:
 These run on the 4 arduinos that make up Lidar Cruise
