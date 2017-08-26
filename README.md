@@ -34,4 +34,4 @@ This object was 3D printed, allowing waterproof connection of the Lidar tube and
 
 ##
 
-Please note: This code is provided for informational use only. Don't do anything stupid with it that may harm anyone or anything. Remember, a level 1 autonomous system requires driver interaction at all times, and who is ultimately responsible for the vehicle.
+Please note: This code is provided for informational use only. Don't do anything stupid with it that may harm anyone or anything. Remember, a level 1 autonomous system requires driver interaction at all times, who is ultimately responsible for the vehicle.
