@@ -26,7 +26,7 @@ Controls motor that Lidar is mounted on, as well as reading photogates. Sends tr
 
 ControlACC:
 
-Reads from steering wheel buttons and central brain, decides what relay/resistor to switch. This controls the car cruise control module set speed. Based on SteeringWheelControl code. Also called Arduino 4.
+Reads from steering wheel buttons and central brain, decides what relay/resistor to switch. This controls the car cruise control module set speed. Based on my SteeringWheelControl repo code. Also called Arduino 4.
 
 ## 1 Fritzing file: 
 This file allowed planning of wiring for Lidar Cruise
